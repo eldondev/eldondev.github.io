@@ -1,0 +1,56 @@
+---
+layout: default
+title: EldonDev - If you don't know your users, you're doomed to forget them.
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>EldonDev - If you don't know your users, you're doomed to forget them.</title>
+    <link href="bootstrap.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <a href="">eldondev</a>
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Eldon&apos;s Statement</a>
+
+          <ul class="nav">
+            <li class="active" id="header_project"><a href="#projects">Projects</a></li>
+            <li><a href="http://www.github.com/eldondev" id="header_github">Github</a></li>
+            <li><a href="http://twitter.com/eldondev"id="header_about">About</a></li>
+            <li><a href="mailto:eldon@eldondev.com"id="header_contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="position:relative;top:60px;">
+      <div class="content">
+        <div class="page-header">
+          <h1>Opinions</h1><br>
+        </div>
+        <div class="row">
+          <h2>On Shipping code</h2>
+          <p>
+          In reference to <a href="http://jstorimer.com/2012/01/09/the-hungry-programmer.html">Jesse Storimer's The Hungry Programmer</a><br>
+          I think a lot about testing when writing code, but recently I have hit what I see as a major stumbling block. The core issues here is that <u><i>I am not writing much code.</i></u> At least, that's the goal. When I do write code, it is usually a contribution to one of the <a href="http://www.rabbitmq.com/">well-established</a> <a href="http://hadoop.apache.org">products</a> <a href="http://cassandra.apache.org">I</a> <a href="https://github.com/nathanmarz/storm">use</a>. The biggest frustration for me there is the lack of true distributed test harnesses. My great hope for this was http://whirr.apache.org/, but it seems to be slow to catch on, or else it is not effectively used in tests. I deeply hope that this gets remedied. <br>E.S., 2012-01-12</p>
+        </div>
+        <p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>        
+        <hr>
+        <div class="page-header">
+          <h1>Projects <small>coming soon!</small></h1>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  </body>
+</html>
