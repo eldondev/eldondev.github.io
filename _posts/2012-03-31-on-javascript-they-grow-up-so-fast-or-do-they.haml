@@ -1,7 +1,8 @@
-\---
+---
 layout: post
 title: 'On Javascript: They grow up so fast! (Or do they?)'
-\---
+excerpt: 'Because big numbers are important'
+---
 %p
   I have been using javascript for a while now. I mean, it needs huge props!
   = succeed "[Begin" do
@@ -15,13 +16,11 @@ title: 'On Javascript: They grow up so fast! (Or do they?)'
   %br/
   I've administered my fair share of boxen, segfaulted in Production, all that kind of shit, and I have come to know a few languages. Recently Node has really been tickling me. Until, that is, I noticed this.
   %pre
-    :preserve
-      
-                ~$ node
-                > (742846440039055165409247126739172 + 10) - 742846440039055165409247126739172
-                0
-                > 
-                  %h3
+    $ node
+    > (742846440039055165409247126739172 + 10) - 742846440039055165409247126739172
+    0
+    >
+  %h3
     %a{:href => "https://www.destroyallsoftware.com/talks/wat"} Wat
   Ok, so I could see this being reasonable in a browser at some point. But on a server side language? With the multi-processor, multi-core computing power we have today? Get off your holier-than-thou ecma-loving asses and give us real math!
   %br/
