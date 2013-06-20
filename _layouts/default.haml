@@ -1,0 +1,30 @@
+---
+---
+!!!
+%html{:lang => "en"}
+  %head
+    %title {{ page.title }}
+    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "/css/custom.css", :rel => "stylesheet"}/
+  %body{"data-offset" => "90", "data-spy" => "scroll", "data-target" => ".navbar"}
+    %script{:src => "/js/jquery.js"}
+    %script{:src => "/js/bootstrap.min.js"}
+    %script{:src => "/js/custom.js"}
+    .container
+      .fill
+        .navbar.navbar-inverse.navbar-fixed-top
+          .navbar-inner
+            %a.brand{:href => "#"} Eldon&apos;s
+            %ul.nav
+              %li
+                %a.homesection{:href => "/#projects"} Projects
+              %li
+                %a.homesection{:href => "/#opinions"} Opinions
+              %li
+                %a#header_github{:href => "http://www.github.com/eldondev"} Github
+              %li
+                %a#header_about{:href => "http://twitter.com/eldondev"} About
+              %li
+                %a#header_contact{:href => "mailto:eldon@eldondev.com"} Contact
+      .content
+        {{ content }}
